@@ -4,9 +4,10 @@ export function aufgabe01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement != "e" && currentElement != 'E') {
-    result.push(currentElement) }
+    if (currentElement != "e" && currentElement != "E") {
+      result.push(currentElement)
     }
+  }
   return result.join("")
 }
 export function aufgabe02(args) {
@@ -19,10 +20,10 @@ export function aufgabe03(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "e" || currentElement === "E") {
-    result++
+      result++
     }
   }
-  return result
+  return result
 }
 
 export function aufgabe04(args) {
@@ -31,10 +32,18 @@ export function aufgabe04(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === " " && input[i-1] != "-"){
+    if (currentElement === " " && input[i - 1] != "-") {
       result++
     }
   }
   return result + 1
 }
 
+export function aufgabe05(args) {
+  const input = args
+  if (input.toLowerCase() === input) {
+    return false
+  } else {
+    return true
+  }
+}
