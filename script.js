@@ -47,3 +47,10 @@ export function aufgabe05(args) {
     return true
   }
 }
+
+export function aufgabe06(args) {
+  const input = args
+  if (input.() === input) {
+    return true}
+    else {return false}
+}
