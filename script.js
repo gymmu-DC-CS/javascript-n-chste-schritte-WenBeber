@@ -50,7 +50,43 @@ export function aufgabe05(args) {
 
 export function aufgabe06(args) {
   const input = args
-  if (input.() === input) {
-    return true}
-    else {return false}
+  if (input === input) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export function aufgabe07(args) {
+  const input = args
+  if (
+    (input.indexOf(" und ") != -1 && input.indexOf("Und") != 0) ||
+    input.indexOf("Und") === 0 ||
+    input === "und"
+  )
+    return true
+  else return false
+}
+
+export function aufgabe08(args) {
+  const input = args
+
+  var textMit3 = input.replace(/[e]/g, "3")
+
+  return textMit3
+}
+
+export function aufgabe09(args) {
+  const input = args
+  if (input.length === 6) return true
+  else return false
+}
+
+export function aufgabe11(args) {
+  const input = args
+  if (input.length === 1) {
+    return input.charCodeAt(0)
+  } else {
+    return "null"
+  }
 }
